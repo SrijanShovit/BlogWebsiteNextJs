@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {db} from '../firebase'
 import {useRouter} from 'next/router'
 
-export default function blogpage({blog,user,allComments}) {
+export default function Blogpage({blog,user,allComments}) {
     // console.log(allComments)
     const [myComment,setMyComment] = useState('')
     const [allDisplayComments,setAllDisplayComments] = useState(allComments)
