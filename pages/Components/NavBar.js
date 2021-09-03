@@ -11,13 +11,13 @@ export default function NavBar({user}) {
           <ul id="nav-mobile" className="right">
             {user? 
             <>
-               <li><Link href="/create_blog"><a>Create Blog</a></Link></li>
+               <li><Link href="/create_blog">Create Blog</Link></li>
                <button className="btn blue" onClick={() => auth.signOut()}>Logout</button>
             </>
             :
             <>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/signup">Sign Up</a></li>
+            <li><Link href="/login"><a>Login</a></Link></li>
+            <li><Link href="/signup"><a>Sign Up</a></Link></li>
             </>
             }
            
